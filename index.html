@@ -1,12 +1,252 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> <!-- подключение шрифтов. обязательно до ВСЕХ стилей -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+    <header class="main_header">
+      <div class="container">
+        <div class="head_wrapper">
+          <div class="index_logo">
+            <img src="img/content/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+          </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+          <nav class="main_navigation_list">
+            <ul>
+              <li class="main_navigation_item"><a href="#">Студия</a></li>
+              <li class="main_navigation_item"><a href="#">Клиенты</a></li>
+              <li class="main_navigation_item"><a href="nerds_catalog.html">Магазин</a></li>
+              <li class="main_navigation_item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="user_block">
+            <a class="login login_ico" href="#">Корзина</a>
+          </div>
+        </div>
+
+        <section class="slider">
+          <!-- Код Слайдер-1: Вариант для оживления с помощью javascript -->
+          <!--
+          <div class="slider_controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+          </div>-->
+          <!-- Код Слайдер-2: Вариант для оживления с помощью css -->
+          <input type="radio" id="btn_1" name="toggle" checked>
+          <input type="radio" id="btn_2" name="toggle">
+          <input type="radio" id="btn_3" name="toggle">
+
+          <div class="slider_controls">
+            <label for="btn_1"></label>
+            <label for="btn_2"></label>
+            <label for="btn_3"></label>
+          </div>
+
+          <div class="slides">
+            <div class="slide">
+              <div class="slide_text">
+                <div class="slide_title"> Долго, дорого,<br>
+                скрупулезно.
+                </div>
+                <p>Математически выверенный дизайн<br>
+                для вашего сайта или мобильных приложений.
+                </p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide_text">
+                <div class="slide_title"> Любим математику<br>
+                как никто другой
+                </div>
+                <p>Никакого креатива, только математические формулы<br>
+                для расчёта идеальных пропорций.
+                </p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide_text">
+                <div class="slide_title"> Только ночь,<br>
+                только хардкор
+                </div>
+                <p>Работать днём, как все? Мы против этого.<br>
+                Ближе к полуночи работа только начинается.
+                </p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="products">
+        <div class="products_item">
+          <img src="img/content/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+          <h2 class="products_item_title">Веб-сайты</h2>
+          <p class="products_item_text">Мир никогда не будет прежним после того как увидит наш сайт!</p>
+          <a class="btn products_item_1_btn" href="#">Заказать</a>
+        </div>
+
+        <div class="products_item">
+          <img src="img/content/illustration-2.jpg" width="300" height="146" alt="Приложения">
+          <h2 class="products_item_title">Приложения</h2>
+          <p class="products_item_text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn products_item_2_btn" href="#">Заказать</a>
+        </div>
+
+        <div class="products_item">
+          <img src="img/content/illustration-3.jpg" width="300" height="146" alt="Презентации">
+          <h2 class="products_item_title">Презентации</h2>
+          <p class="products_item_text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn products_item_3_btn" href="#">Заказать</a>
+        </div>
+      </section>
+
+      <!-- 2.2 СамоРеклама Presentation -->
+      <section>
+        <div class="presentation">
+          <div class="presentation_left"> <!-- 2.2.1 Часть слева -->
+            <p class="presentation_text_1"><b class="about_us">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+            <p class="presentation_text_2">Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы</p>
+            <p class="presentation_title"><b class="customer_offer">Выполняем заказы на разработку:</b></p>
+            <ul class="presentation_list">
+              <li class="presentation_list_item">
+         Веб-сайтов любой сложности
+              </li>
+              <li class="presentation_list_item">
+         Мобильных приложений для iOS и Android
+              </li>
+              <li class="presentation_list_item">
+         Слайдшоу и видео для корпоративных презентаций
+              </li>
+            </ul>
+          </div>
+
+          <div class="presentation_right">
+
+            <div class="index_logo2">
+              <img src="img/content/nerds-illustration.jpg" width="360" height="208" alt="Логотип Нёрдс 2">
+            </div>
+
+            <table class="presentation_table">
+              <tr>
+                <th colspan="3">С 2004 года любим точность во всём:</th>
+
+              </tr>
+              <tr class="row_2">
+                <td class="cell_row_2_1">146<sup class="cell_row_2_sup">%</sup></td>
+                <td class="cell_row_2_2">100<sup class="cell_row_2_sup">%</sup></td>
+                <td class="cell_row_2_3">50<sup class="cell_row_2_sup">%</sup></td>
+              </tr>
+              <tr class="row_3">
+                <td class="cell_row_3_1">Уровень самоотдачи</td>
+                <td class="cell_row_3_2">Соблюдение сроков</td>
+                <td class="cell_row_3_3">Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Логотипы Партнёров Partners -->
+      <section class="partners">
+        <div class="partner_logo">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="partner_1" src="img/content/logo-1.png" width="199" height="68" alt="html academy">
+          </a>
+        </div>
+
+        <div class="partner_logo">
+          <a href="#">
+            <img class="partner_2" src="img/content/logo-2.png" width="209" height="90" alt="Barbershop BORODINSKI">
+          </a>
+        </div>
+
+        <div class="partner_logo">
+          <a href="#">
+            <img class="partner_3" src="img/content/logo-3.png" width="185" height="52" alt="glasses PINK">
+          </a>
+        </div>
+
+        <div class="partner_logo">
+          <a href="#">
+            <img class="partner_4" src="img/content/logo-4.png" width="173" height="84" alt="MiSHKA">
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Блок контакты Contacts + карта Map -->
+    <section class="map">
+      <div class="google_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5985375309226!2d30.321119921714985!3d59.9388035869697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1503579145443" width="1440" height="415" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div>
+        <div class="contacts">
+          <h3 class="contacts_title">NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts_text_1">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts_text_2">тел. +7(812) 275-75-75</p>
+          <a class="btn contacts_btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main_footer">
+      <div class="container">
+
+        <div class="footer_wrapper">
+          <div class="social">
+            <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+            <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+            <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+          </div>
+
+          <!--Рекламный слоган -->
+          <div class="advertizing_footer">
+            <b class="footer_slogan">Давайте дружить, это выгодно!</b>
+            <p class="footer_text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Всплывающее PopUp-окно Напишите нам -->
+    <div class="modal_content">
+      <button class="modal_content_close" type="button" title="Закрыть"></button>
+      <h2 class="modal_content_title">Напишите нам</h2>
+      <form class="form_write_us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="inputs_wrapper">
+          <label class="modal_content_inputs">
+            <span>Ваше имя:</span>
+            <input class="input_form_name" type="text" name="username" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label class="modal_content_inputs">
+            <span>Ваш e-mail:</span>
+            <input class="input_form_email" type="text" name="usermail" placeholder="email@example.com">
+          </label>
+        </div>
+        <label class="modal_content_textarea">
+          <span>Текст письма:</span>
+          <textarea class="textarea_form_text" name="usercomment" rows="4" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="modal_overlay"></div> <!--блокировка страницы при открытом попапе -->
+
+    <script src="js/popup.js"> </script>
 
   </body>
 </html>

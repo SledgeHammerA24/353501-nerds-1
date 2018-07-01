@@ -1,0 +1,2434 @@
+body {
+  min-width: 1200px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Roboto", "FF DIN", sans-serif;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: normal;
+  color: #000000;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: normal;
+  color: #000000;
+}
+
+.main_header {
+  min-height: 50px;
+  margin-bottom: 80px;
+
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+  /* Страница INDEX */
+
+  /* ШАПКА */
+  .head_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 1160px;
+    min-height: 65px;
+  }
+
+.index_logo {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 170px;
+  min-height: 65px;
+  margin-left: 0px;
+  margin-top: 49px;
+  margin-right: 70px;
+}
+
+/* подсветка при наведении */
+.index_logo:hover {
+  opacity: 0.8;
+}
+
+/* подсветка при нажатии */
+.index_logo:active {
+  opacity: 0.3;
+}
+
+.index_logo img{
+  width: 160px;
+  height: 65px;
+}
+
+.main_navigation_list {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 600px;
+  margin-top: 61px;
+}
+
+.main_navigation_list a {
+  display: block;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+.main_navigation_list ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.main_navigation_item {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 85px;
+  padding: 7px 22px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.main_navigation_list a:hover {
+  color: red;
+
+  background: #eeeeee;
+}
+
+.main_navigation_list a:active {
+  color: #b4b4b4;
+
+  background: #eeeeee;
+}
+
+.main_navigation_list .active {
+  position: relative;
+}
+
+.main_navigation_list .active::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 2px;
+  left: 24px;
+
+  height: 2px;
+
+  background: #fb565a;
+}
+
+.main_navigation_list .active a:hover  {
+  color: #000000;
+}
+
+.user_block {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  max-width: 140px;
+  min-height: 90px;
+
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.user_block a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.user_block .active {
+  position: relative;
+}
+
+.user_block .active::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  left: 8px;
+
+  height: 2px;
+
+  background: #fb565a;
+}
+
+.login {
+  position: relative;
+
+  display: inline-block;
+  margin-top: 43px;
+  padding-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 12px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform:uppercase;
+  color: #3f3f3f;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 62%;
+  left: 13%;
+  transform: translate(-50%,-50%);
+
+  background-image: url("../img/decoration/sprite.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.login_ico::before {
+  width: 15px;
+  height: 15px;
+
+  background-position: -5px -5px;
+}
+
+.login:hover {
+  color: red;
+}
+
+.login:hover::before {
+  opacity: 0.3;
+}
+
+.login:active::before {
+  opacity: 0.3;
+}
+
+.login:active {
+  color: #ababab;
+
+  background: #eeeeee;
+}
+
+.user_block .active:hover  {
+  color: #000000;
+}
+
+/* Устройство слайдера. Вариант для организации под java script */
+.slider {
+  position: relative;
+
+  width: 1160px;
+  min-height: 427px;
+  margin: 0 auto;
+}
+
+.slider_controls {
+  position: absolute;
+  bottom: 82px;
+  left: 582px;
+  z-index: 80;
+
+  width: 160px;
+  height: 32px;
+  margin-left: -82px;
+
+  text-align: center;
+}
+
+/* стилизация i (оживление слайдера при помощи java script) */
+.slider_controls i {
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  margin: 0 7px;
+
+  background: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider_controls .active {
+  background: #c1c1c1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 100%;
+}
+
+.slide_text {
+  width: 520px;
+  max-width: 530px;
+  min-height: 400px;
+  padding: 10px 0;
+
+  color: #283136;
+}
+
+.slide_text p {
+  margin-bottom: 39px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.slide_title {
+  margin-top: 63px;
+  margin-bottom: 26px;
+
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+  letter-spacing: 0.004em;
+  color: #000000;
+}
+
+.slide a {
+  text-decoration: none;
+}
+
+/* Организация кнопок (размером 240х50) для Слайдера */
+.slide_text .btn {
+  width: 136px;
+  height: 16px;
+  padding: 17px 52px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.slide_text .btn:hover {
+  background-color: #e74246;
+}
+
+.slide_text .btn:active {
+  color: #e37376;
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 1px 1px #c13135;
+}
+
+/* скрытие всех слайдеров */
+.slide {
+  display: none;
+}
+
+/* показ нужного слайда (оживление слайдера при помощи java script) */
+/*.slide:nth-child(3) {
+  display: block;
+}*/
+
+/* для обоих вариантов слайдера */
+.slide:nth-child(1) {
+  background-image: url("../img/content/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 397px -4px;
+  background-color: #eeeeee;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/content/slider-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% -2px;
+  background-color: #eeeeee;
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/content/slider-3.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% -4px;
+  background-color: #eeeeee;
+}
+
+/* 3) в css прописывается скрытие скрытых элементов (оживление слайдера при помощи css)*/
+.slider input[type=radio] {
+  position:absolute;
+  opacity: 0;
+}
+
+/* 4) в css стилизуются управлющие эл-ты label(взамен стилизации i) */
+.slider_controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  margin: 0 7px;
+
+  background: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 5) прописывается селектор для подсветки выбранного УПРАВЛЯЮЩЕГО элемента */
+#btn_1:checked ~ .slider_controls label[for="btn_1"],
+#btn_2:checked ~ .slider_controls label[for="btn_2"],
+#btn_3:checked ~ .slider_controls label[for="btn_3"] {
+  background: #c1c1c1; /* - состояние в активном состоянии */
+}
+
+/* показ нужного слайда (оживление слайдера при помощи css) */
+/* 6) прописывается селектор для каждого слайда */
+#btn_1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn_2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn_3:checked ~ .slides .slide:nth-child(3) {
+display: block;
+}
+
+/* PRODUCTS */
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  min-height: 75px;
+  margin-left: -100px;
+  margin-bottom: 120px;
+
+  color: #000000;
+}
+
+.products_item {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 300px;
+  margin-left: 100px;
+  min-height: 350px;
+}
+
+.products_item h2 {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  text-transform:uppercase;
+  color: #000000;
+}
+
+.products_item p {
+  display: block;
+  width: 260px;
+  min-height: 60px;
+  margin-top: 17px;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.019em;
+  color: #283136;
+}
+
+.products_item a {
+  text-decoration: none;
+}
+
+/* Устройство любой кнопки */
+.btn {
+  display: block;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform:uppercase;
+  letter-spacing: 0.022em;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Организация маленьких кнопок (размером 80х28) для услуг Products */
+.products_item .btn {
+  width: 80px;
+  height: 28px;
+  padding: 11px 40px;
+  margin-top: 20px;
+}
+
+/* Стилизация цветом первой маленькой кнопки (размером 80х28) для услуг Products */
+.products_item_1_btn {
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.products_item_1_btn:hover {
+  background-color: #e74246;
+}
+
+.products_item_1_btn:active {
+  color: #e26f72;
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 1px 1px #c13135;
+}
+
+/* Стилизация цветом второй маленькой кнопки (размером 80х28) для услуг Products */
+.products_item_2_btn {
+  color: #ffffff;
+
+  background-color: #00ca74;
+}
+
+.products_item_2_btn:hover {
+  background-color: #00bc6c;
+}
+
+.products_item_2_btn:active {
+  color: #4dc491;
+
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 1px 1px #009958;
+}
+
+/* Стилизация цветом последней маленькой кнопки (размером 80х28) для услуг Products */
+.products_item_3_btn {
+  color: #ffffff;
+
+  background-color: #efc84a;
+}
+
+.products_item_3_btn:hover {
+  background-color: #eab534;
+}
+
+.products_item_3_btn:active {
+  color: #ecc060;
+
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 1px 1px #ce961f;
+}
+
+/* PRESENTATION */
+
+.presentation {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  min-height: 410px;
+  margin-bottom: 55px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+/* вставка декоративной линии псевдоэлементом */
+.presentation::before {
+  content: "";
+
+  position: absolute;
+  top: -44px;
+  left: 0;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eeeeee;
+}
+
+.presentation_left {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 680px;
+  margin-left: 0px;
+  margin-top: 0;
+  padding: 0;
+  min-height: 200px;
+}
+
+.presentation_text_1 {
+  margin: 0;
+  margin-top: 33px;
+
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 45px;
+
+  letter-spacing: 0.011em;
+}
+
+.presentation_text_2 {
+  margin: 0;
+  margin-top: 34px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.002em;
+}
+
+.presentation_title {
+  margin: 0;
+  margin-top: 38px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform:uppercase;
+  letter-spacing: normal;
+}
+
+.presentation ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+  list-style: none;
+}
+
+.presentation_list_item {
+  position: relative;
+
+  margin-top: 24px;
+  margin-left: 37px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.presentation_list_item::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: -37px;
+
+  width: 26px;
+  height: 2px;
+
+  background-color: #fb565a;
+}
+
+.presentation_right {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 360px;
+  min-height: 200px;
+  margin-right: 0px;
+}
+
+.index_logo2 {
+  width: 360px;
+  height: 208px;
+  margin: 0;
+  padding: 0;
+}
+
+.presentation_table {
+  margin: 0;
+  margin-top: 31px;
+  padding: 0;
+}
+
+.presentation_table th {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform:uppercase;
+  letter-spacing: normal;
+}
+
+.row_2 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.row_3 {
+  padding-top: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.cell_row_2_1 {
+  padding-top: 37px;
+  padding-left: 0;
+}
+
+.cell_row_2_2 {
+  padding-top: 37px;
+  padding-left: 10px;
+}
+
+ .cell_row_2_3 {
+  padding-top: 37px;
+  padding-left: 13px;
+}
+
+ .cell_row_2_sup {
+  font-size: 27px;
+}
+
+.cell_row_3_1 {
+  padding-top: 16px;
+}
+
+.cell_row_3_2 {
+  padding-top: 16px;
+  padding-left: 9px;
+}
+
+.cell_row_3_3 {
+  padding-top: 16px;
+  padding-left: 14px;
+}
+
+/* PARTNERS */
+
+.partners {
+  position: relative; /* для установки декоративных линий */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  min-height: 210px;
+  margin-bottom: 73px;
+}
+
+/* Декоративная линия горизонтальная верхняя */
+.partners::before {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  left: 0px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eeeeee;
+}
+
+
+/* Декоративная линия горизонтальная нижняя */
+.partners::after {
+  content: "";
+
+  position: absolute;
+  top: 200px;
+  left: 0px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eeeeee;
+}
+
+.partners a {
+  text-decoration: none;
+}
+
+.partner_logo {
+  position: relative;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 300px;
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.partner_logo:last-child {
+  width: 250px;
+}
+
+/* вставка декоративной чёрточки размером 26х2 псевдоэлементом */
+.partner_logo::before {
+  content: "";
+
+  position: absolute;
+  right: 19px;
+  top: 54px;
+  z-index: 30;
+
+  width: 2px;
+  height: 52px;
+
+  background-color: #eeeeee;
+}
+
+/* скрываем последнюю черточку за ненадобностью */
+.partner_logo:last-child::before {
+  background-color: #ffffff;
+}
+
+/* Позиционирование логотипов внутри контейнера */
+.partner_1 {
+  margin-top: 52px;
+  margin-left: 31px;
+
+  opacity: 0.2;
+  }
+
+.partner_2 {
+  margin-top: 35px;
+  margin-left: 26px;
+
+  opacity: 0.2;
+  }
+
+.partner_3 {
+  margin-top: 54px;
+  margin-left: 38px;
+
+  opacity: 0.2;
+}
+
+.partner_4 {
+  margin-top: 41px;
+  margin-left: 44px;
+
+  opacity: 0.2;
+}
+
+/* подсветка всех логотипов при наведении */
+.partner_logo:hover img {
+  opacity: 1;
+}
+
+/* подсветка всех логотипов при нажатии */
+.partner_logo:active img {
+  opacity: 0.1;
+}
+
+/* КАРТА И КОНТАКТЫ */
+
+.map {
+  position: relative;
+
+  min-height: 416px;
+  margin-bottom: 66px;
+  padding-top: 0px;
+
+  background-image: url("../img/decoration/map_with_marker.jpg");
+  background-size: 1440px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.yandex_map {
+  margin: 0 auto;
+  margin-left: 72px;
+}
+
+.google_map {
+  margin: 0 auto;
+  margin-left: 72px;
+}
+
+iframe {
+  border-width: 0;
+}
+
+.contacts {
+  position: absolute;
+  top: 52px;
+  left: 370px;
+
+  width: 320px;
+  min-height: 310px;
+  margin-left: 0px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.contacts_title {
+  padding-top: 32px;
+  padding-left: 51px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform:uppercase;
+  letter-spacing: normal;
+}
+
+.contacts p {
+  width: 210px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts_text_1 {
+  padding-top: 4px;
+  padding-left: 52px;
+}
+
+.contacts_text_2 {
+  padding-top: 2px;
+  padding-left: 52px;
+
+  letter-spacing: 0.023em;
+}
+
+.contacts a {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+/* Организация большой кнопки для карты */
+.contacts .btn {
+  width: 134px;
+  height: 18px;
+  margin-top: 37px;
+  margin-left: 52px;
+  padding: 16px 43px;
+  vertical-align: bottom;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.contacts_btn:hover {
+  background-color: #e74246;
+}
+
+.contacts_btn:active {
+  color: #e26f72;
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 1px 1px #c13135;
+}
+
+/* ПОДВАЛ */
+
+.main_footer {
+  min-height: 150px;
+}
+
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  min-height: 150px;
+}
+
+.social {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 280px;
+  min-height: 80px;
+}
+
+.advertizing_footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  width: 590px;
+  min-height: 180px;
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.advertizing_footer b {
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.advertizing_footer p {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 31px;
+}
+
+.footer_slogan {
+  width: 570px;
+  padding-left: 30px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.003em;
+}
+
+.footer_text {
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+/* Всплывающая форма */
+.modal_content {
+  position: fixed;
+  top: 155px;
+  left: 472px;
+  z-index: 100;
+
+  display: none;
+  width: 960px;
+  min-height: 593px;
+
+  color: #000000;
+
+  background: #ffffff;
+  box-shadow: 10px 20px 50px 1px #000000,
+  -10px 20px 50px 1px #000000;
+}
+
+/* Закрывающий крестик */
+.modal_content_close {
+  position: absolute;
+  top: 78px;
+  left: 844px;
+
+  width: 28px;
+  height: 28px;
+
+  font-size: 0;
+
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+/* Создаём два псевдоэлемента - два прямоугольничка */
+.modal_content_close::before,
+.modal_content_close::after {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 2px;
+
+  width: 25px;
+  height: 5px;
+
+  background-color: #fecccd;
+  border-radius: 1px;
+}
+
+/* Разворачиваем на 45 градусов */
+.modal_content_close::before {
+  transform: rotate(45deg);
+}
+
+.modal_content_close::after {
+  transform: rotate(-45deg);
+}
+
+/* Подсветка крестика при наведении */
+.modal_content_close:hover::before,
+.modal_content_close:hover::after {
+  background-color: #fb565a;
+}
+
+/* Подсветка крестика при нажатии */
+.modal_content_close:active::before,
+.modal_content_close:active::after {
+  opacity: 0.1;
+}
+
+.modal_content h2 {
+  margin: 0;
+  margin-top: 70px;
+  margin-left: 99px;
+  margin-bottom: 41px;
+
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: inherit;
+  letter-spacing: normal;
+}
+
+.modal_content .form_write_us {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Стилизация полей ввода */
+.form_write_us input[type="text"], .form_write_us textarea {
+
+  width: 331px;
+  margin: 0;
+  padding: 14px 13px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #a1a1a1;
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.form_write_us textarea {
+  width: 730px;
+}
+
+/* подсветки полей ввода */
+
+.form_write_us input[type="text"]:hover, .form_write_us textarea:hover {
+  outline: none;
+  border: 2px solid #b4b9bb;
+}
+
+.form_write_us input[type="text"]:hover::placeholder, .form_write_us textarea:hover::placeholder {
+  color: #b4b9bb;
+}
+
+
+.form_write_us input[type="text"]::placeholder, .form_write_us textarea::placeholder {
+  color: #a1a1a1;
+}
+
+.form_write_us input:focus, .form_write_us textarea:focus {
+  color: #000000;
+
+  outline: none;
+  border: 2px solid #000000;
+}
+
+.form_write_us input:focus::placeholder, .form_write_us textarea:focus::placeholder {
+  color: #000000;
+}
+
+.form_write_us input:hover:focus::placeholder, .form_write_us textarea:hover:focus::placeholder {
+  color: #000000;
+}
+
+.form_write_us input:hover:focus, .form_write_us textarea:hover:focus {
+  color: #000000;
+
+  outline: none;
+  border: 2px solid #000000;
+}
+
+.inputs_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 900px;
+  min-height: 50px;
+  margin-bottom: 34px;
+  background-color: #ffffff;
+}
+
+.form_write_us .modal_content_inputs {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: block;
+  width: 362px;
+  min-height: 50px;
+}
+
+.form_write_us .modal_content_textarea {
+  display: block;
+  min-height: 50px;
+  margin-left: 100px;
+}
+
+.form_write_us span {
+  display: block;
+  margin-bottom: 8px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+/* позиционирование полей input */
+.modal_content_inputs {
+  margin-left: 100px;
+}
+
+.modal_content_inputs:nth-child(2) {
+  margin-left: 39px;
+}
+
+.form_write_us .btn {
+  position: absolute;
+  top: 436px;
+  left: 89px;
+
+  margin-top: 23px;
+  margin-left: 12px;
+  padding: 10px 82px;
+  color: #ffffff;
+
+  background-color: #fb565a;
+  }
+
+.form_write_us .btn:hover {
+  background-color: #e74246;
+}
+
+.form_write_us .btn:active {
+  color: #e37376;
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 1px 1px #c13135;
+}
+
+/* анимация появления попапа */
+@keyframes bounce {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
+
+/* класс для JS */
+.modal_content_show {
+  display: block; /* временное открытие */
+  animation: bounce 1.6s;
+}
+
+/* анимация тряски попапа при ошибке */
+@keyframes shake {
+  0%, 100% {transform: translateX(0px);}
+  10%, 30%, 50%, 70% {transform: translateX(-5px);}
+  20%, 40%, 60%, 80% {transform: translateX(5px);}
+}
+
+/* класс для JS */
+.modal_error {
+  animation: shake 0.6s;
+}
+
+/* блокировка страницы при открытом попапе */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* класс для JS */
+.modal_overlay_show {
+  display: block;
+}
+
+/* Страница Catalog */
+
+.catalog_title {
+  display: block;
+  margin: 0;
+  margin-left: 218px;
+  padding: 0;
+  padding-top: 73px;
+  padding-bottom: 109px;
+
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 55px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.catalog_header {
+  margin-bottom: 20px;
+}
+
+.main_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ЛЕВАЯ ЧАСТЬ СТРАНИЦЫ */
+.filters {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 260px;
+  min-height: 230px;
+  margin-left: 0;
+}
+
+.price_filter {
+  width: 260px;
+  min-height: 210px;
+  margin-bottom: 54px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.price_filter_title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 48px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform:uppercase;
+  color: #000000;
+}
+
+.range_filter {
+  width: 260px;
+}
+
+/* стилизация контейнера для шкалы */
+.range_controls {
+  position: relative;
+
+  height: 80px;
+  margin-bottom: 12px;
+  padding: 0 20px;
+
+  color: #000000;
+  overflow: hidden;
+
+  background: #eeeeee;
+  border-radius: 5px;
+}
+
+/* шкала серого цвета */
+.range_controls .scale {
+  height: 2px;
+  margin-top: 39px;
+
+  background: #d7dcde;
+}
+
+/* шкала зелёного цвета */
+.range_controls .bar {
+  height: 2px;
+  margin-top: 39px;
+
+  background: #00ca74;
+}
+
+/* общая часть ползунков*/
+.range_controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 18px;
+
+  width: 4px; /* сердцевинка */
+  height: 4px; /* сердцевинка */
+  border: 8px solid white; /* толщина квадратика, будущего кружка */
+  border-radius: 50%; /* квадрат делаем кругом */
+  background: #ababab; /* цвет сердцевинки */
+
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+/* сдвиг минимального ползунка */
+.range_controls .toggle_max {
+  left: 160px;
+}
+
+/* стилизация полей ввода цены */
+.price_controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 12px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-align: center;
+  color: #5d6367;
+
+  background: #eeeeee;
+  border: none;
+  border-radius: 5px;
+}
+
+.price_controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  min-height: 40px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.price_text {
+  display: block;
+  max-width: 30px;
+}
+
+.min_price_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 130px;
+}
+
+.max_price_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 130px;
+}
+
+/* стилизуем тексты "от" и "до" */
+.min_price_block span,
+.max_price_block span {
+font-weight: 300;
+font-size: 16px;
+line-height: 22px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+text-align: center;
+text-transform: uppercase;
+color: #283136;
+}
+
+/* ФИЛЬТРЫ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+
+  border: none;
+}
+
+legend {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+
+/* ФИЛЬТР СЕТКА */
+.pattern_form {
+  width: 180px;
+  min-height: 160px;
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  margin-top: 52px;
+  margin-bottom: 27px;
+
+  text-decoration: none;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.form_title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Стилизуем метки радиобаттонов*/
+.pattern_form_radio {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin: 10px 18px;
+  padding-left: 17px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #283136;
+}
+
+/* Делаем Декоративный круглый чекбокс с галочкой */
+.pattern_form_radio {
+  position: relative;
+
+  cursor: pointer;
+}
+
+/* Прячем истинный чекбокс */
+.pattern_form_radio input[type="radio"] {
+  display: none;
+}
+
+/* Дальше рисуем круг через квадратик в span */
+.pattern_form_radio input[type="radio"]+.pattern_checkbox_indicator {
+  position: absolute;
+  top: -1px;
+  left: -17px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 4px solid #b8b8b8; /* толщина квадратика, будущего кружка */
+  border-radius: 50%;
+  background: #ffffff; /* цвет сердцевинки */
+}
+
+/* Дальше рисуем сердцевину в виде кружка через квадрат */
+.pattern_form_radio input[type="radio"]:checked +.pattern_checkbox_indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #b8b8b8;
+  border-radius: 4px;
+}
+
+/* Подсветки */
+
+/* Подсветка (любого) поля (круга (без текста)) */
+.pattern_form_radio input[type="radio"]:hover+.pattern_checkbox_indicator {
+  border-color: #4d4d4d;
+}
+
+/* disabled (любого) поля (круга (без текста)) */
+.pattern_form_radio input[type="radio"]:disabled+.pattern_checkbox_indicator {
+  border-color: #ededed;
+}
+
+/* Подсветка чекнутого поля (псевдоэлемента - сердцевины "точки") */
+.pattern_form_radio:hover input[type="radio"]:checked + .pattern_checkbox_indicator::before {
+  background-color: #4d4d4d;
+}
+
+/* disabled чекнутого поля (псевдоэлемента - сердцевины "точки") */
+.pattern_form_radio input[type="radio"]:checked:disabled +.pattern_checkbox_indicator::before {
+  background-color: #ededed;
+}
+
+/* текст радиобаттона при подсветке */
+.pattern_form_text:hover {
+  color: #000000;
+}
+
+/* текст радиобаттона при :disabled */
+.pattern_form_radio input[type="radio"]:disabled + .pattern_checkbox_indicator + .pattern_form_text
+{
+  color: #bec1c2; /* меняем текст при :disabled */
+}
+
+
+/* ФИЛЬТР ОСОБЕННОСТИ */
+
+.particularity_form {
+  width: 220px;
+  min-height: 240px;
+  margin: 0;
+  margin-bottom: 28px;
+  padding-top: 4px;
+}
+
+
+/* Стилизуем метки чекбоксов*/
+.particularity_form_checkbox {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin: 10px 20px;
+  padding-left: 15px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+  text-decoration: none;
+}
+
+/* Делаем Декоративный круглый чекбокс с голочкой */
+.particularity_form_checkbox {
+  position: relative;
+
+  cursor: pointer;
+}
+
+/* Прячем истинный чекбокс */
+.particularity_form_checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Дальше рисуем прямоугольник в span */
+.particularity_form_checkbox input[type="checkbox"]+.particularity_checkbox_indicator {
+  position: absolute;
+  top: -1px;
+  left: -19px;
+  z-index: 5;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid #b8b8b8; /* толщина квадратика, будущего кружка */
+  border-radius: 4px;
+}
+
+/* НЕ рисуем ненужный квадрат при поле checked */
+.particularity_form_checkbox input[type="checkbox"]:checked +.particularity_checkbox_indicator
+{
+  border: none;
+}
+
+/* НЕ рисуем ненужный квадрат при поле checked */
+.particularity_form_checkbox input[type="checkbox"]:checked:disabled+.particularity_checkbox_indicator
+{
+  border: none;
+  opacity: 1;
+}
+
+/* Дальше рисуем чекнутый бокс в виде вставки спрайта */
+.particularity_form_checkbox input[type="checkbox"]:checked+.particularity_checkbox_indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: -1px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/decoration/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -5px -30px;
+  opacity: 0.4;
+}
+
+/* Подсветки */
+
+/* текст чекбокса при подсветке */
+.particularity_form_text:hover {
+  color: #000000;
+}
+
+/* текст чекбокса при :disabled */
+.particularity_form_checkbox input[type="checkbox"]:disabled+.particularity_checkbox_indicator + .particularity_form_text
+{
+  color: #bec1c2;
+}
+
+/* Подсветка НЕчекнутого поля ("иконки" без текста) */
+.particularity_form_checkbox:hover input[type="checkbox"] + .particularity_checkbox_indicator {
+  border-color: #4d4d4d;
+}
+
+/* Подсветка чекнутого поля ("иконки" без текста) */
+.particularity_form_checkbox:hover input[type="checkbox"]:checked+.particularity_checkbox_indicator::before {
+  opacity: 1;
+}
+
+/* disabled НЕчекнутого поля ("иконки" без текста) */
+.particularity_form_checkbox input[type="checkbox"]:disabled + .particularity_checkbox_indicator {
+  border: 2px solid #283136;
+  opacity: 0.1;
+}
+
+/* disabled чекнутого поля ("иконки" без текста) */
+.particularity_form_checkbox input[type="checkbox"]:checked:disabled + .particularity_checkbox_indicator::before {
+  opacity: 0.1;
+}
+
+.filters .btn {
+  width: 100%;
+  padding: 18px 0;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #eeeeee;
+  outline: none;
+  cursor: pointer;
+}
+
+.filters .btn:hover {
+  background-color: #dfdfdf;
+}
+
+.filters .btn:active {
+  color: #959595;
+
+  background-color: #dfdfdf;
+  box-shadow: 0px -3px 1px 0px #bfbfbf;
+}
+
+/* ПРАВАЯ ЧАСТЬ СТРАНИЦЫ */
+
+.right_side {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 760px;
+  min-height: 230px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 760px;
+  min-height: 100px;
+  margin-left: 0;
+  margin-bottom: 13px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+
+.selection h3 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform:uppercase;
+  color: #000000;
+}
+
+.selection ul, li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.selection_title_box {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 260px;
+  min-height: 30px;
+  margin-top: 38px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.selection_title {
+  display: inline-block;
+  vertical-align: top;
+
+  background-color: #ffffff;
+}
+
+.selection_item_text a {
+  text-decoration: none;
+}
+
+.selection_sorting_wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 371px;
+  margin-top: 38px;
+  min-height: 30px;
+  color: #b2b2b2;
+
+  background-color: #ffffff;
+}
+
+.selection_item_text {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform:uppercase;
+  color: #b2b2b2;
+}
+
+.selection_item_text a {
+  color: #b2b2b2;
+}
+
+.selection_item_text .active {
+  color: #000000;
+}
+
+
+/* скрытие текстов "По возрастанию" и "По убыванию"  */
+/* взамен них рисуем треугольники - один вверх, другой вниз  */
+.nodisplay {
+  margin-top: 2px;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: #ffffff;
+}
+
+/* позиционирование ссылки с размерами под треугольник вниз */
+.triangle_down {
+  position: relative;
+
+  padding: 7px 7px;
+  margin-left: 31px;
+}
+
+/* Создаём псевдоэлемент - треугольник вниз */
+.triangle_down::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 0px;
+  height: 0px;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #cccccc;
+}
+
+/* позиционирование ссылки с размерами под треугольник вниз */
+.selection_item_text .triangle_down_active {
+  position: relative;
+
+  padding: 7px 7px;
+  margin-left: 31px;
+}
+
+/* Создаём псевдоэлемент - треугольник вниз */
+.selection_item_text .triangle_down_active::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 0px;
+  height: 0px;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #000000;
+}
+
+
+/* позиционирование ссылки с размерами под треугольник вверх */
+.triangle_up {
+  position: relative;
+
+  padding: 7px 7px;
+  margin-left: 9px;
+}
+
+/* Создаём псевдоэлемент - треугольник вверх */
+.triangle_up::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 3px;
+
+  width: 0px;
+  height: 0px;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #cccccc;
+}
+
+/* позиционирование ссылки с размерами под треугольник вверх */
+.triangle_up_active {
+  position: relative;
+
+  padding: 7px 7px;
+  margin-left: 9px;
+}
+
+/* Создаём псевдоэлемент - треугольник вверх */
+.triangle_up_active::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 3px;
+
+  width: 0px;
+  height: 0px;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #000000;
+}
+
+/* ПОДСВЕТКИ СОРТИРОВКИ */
+
+/* подсветка ссылок (слова) при наведении */
+.selection_item_text a:hover {
+  color: #666666;
+}
+
+/* подсветка ссылок (слова) при нажатии */
+.selection_item_text a:active {
+  color: #000000;
+}
+
+/* подсветка псевдоэлемента - треуугольника вниз при наведении*/
+.triangle_down:hover::before {
+  border-top: 10px solid #999999;
+}
+
+/* подсветка псевдоэлемента - треуугольника вниз при нажатии*/
+.triangle_down:active::before {
+  border-top: 10px solid #000000;
+}
+
+/* подсветка псевдоэлемента - треуугольника вверх при наведении*/
+.triangle_up:hover::before {
+  border-bottom: 10px solid #999999;
+}
+
+/* подсветка псевдоэлемента - треуугольника вверх при нажатии*/
+.triangle_up:active::before {
+  border-bottom: 10px solid #000000;
+}
+
+/* ОБРАЗЦЫ ТОВАРОВ */
+
+.samples {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 800px;
+  min-height: 180px;
+  margin-left: 0;
+  margin-left: -40px;
+  margin-bottom: 17px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.samples section, article {
+  display: block;
+}
+
+.samples img {
+  vertical-align: bottom;
+
+  border: 0;
+}
+
+.samples_item {
+  position: relative;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 360px;
+  min-height: 616px;
+  margin-left: 40px;
+  margin-bottom: 33px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.samples_item img {
+  width: 360px;
+  height: 576px;
+  padding-top: 40px;
+}
+
+/* Создаём псевдоэлемент - прямоугольник */
+.samples_item::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 360px;
+  height: 40px;
+
+  background-color: #e9e9e9;
+}
+
+/* Создаём псевдоэлемент - кружок N1 */
+.samples_item::after {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 14px;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* Создаём псевдоэлементы - кружок N2 и N3 */
+.samples_head::before,
+.samples_head::after {
+content: "";
+
+position: absolute;
+top: 13px;
+left: 37px;
+
+border: 8px solid #ffffff;
+border-radius: 50%;
+}
+
+/* Уточняем положение псевдоэлемента - кружка N3 */
+.samples_head::after {
+  left: 60px;
+}
+
+/* ПОДСВЕТКИ Товаров */
+
+/* подсветка псевдоэлемента - прямоугольника при наведении*/
+.samples_item:hover::before {
+  background-color: #4d4d4d;
+}
+
+/* подсветка товара при наведении - наведение тени */
+.samples_item:hover {
+  box-shadow: 0px 3px 10px 2px #cfcfcf;
+}
+
+/* попап товаров */
+.samples_popup {
+  position: absolute;
+  top: 386px;
+  left: 0px;
+
+  display: none;
+  width: 360px;
+  min-height: 230px;
+
+  color: #000000;
+
+  background-color: #eeeeee;
+
+  z-index: 90;
+}
+
+/* стилизация заголовков-ссылок в samples popup (общие свойства) */
+.samples_popup_title {
+  display: block;
+  margin: 0 auto;
+  margin-top: 26px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform:uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+/* стилизация заголовков-ссылок в samples popup (уникальные свойства - ширина области клика) */
+
+/* Sedona */
+.popup_title_width1 {
+  width: 70px;
+}
+
+/* Pink */
+.popup_title_width2 {
+  width: 82px;
+}
+
+/* barbershop */
+.popup_title_width3 {
+  width: 120px;
+}
+
+/* Mishka */
+.popup_title_width4 {
+  width: 70px;
+}
+
+/* A plus */
+.popup_title_width5 {
+  width: 65px;
+}
+
+/* Kvast */
+.popup_title_width6 {
+  width: 60px;
+}
+
+.samples_popup_text {
+  margin-top: 15px;
+  padding: 0px 60px;
+  vertical-align: top;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform:none;
+  text-align: center;
+  color: #666666;
+}
+
+.samples_item a {
+  text-decoration: none;
+}
+
+/* подсветка ссылок (слова) при наведении */
+.samples_popup .samples_popup_title:hover {
+  text-decoration: underline;
+  color: #e74246;
+}
+
+/* подсветка ссылок (слова) при нажатии */
+.samples_popup .samples_popup_title:active {
+  color: #d7373b;
+}
+
+/* Организация кнопок попапа (размером 120х28) для товаров Samples */
+.samples_popup .btn {
+  width: 120px;
+  padding: 17px 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  vertical-align: top;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform:none;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.samples_popup .btn:hover {
+  background-color: #e74246;
+}
+
+.samples_popup .btn:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 2px 2px 2px #c13135;
+}
+
+/* подсветка товара при наведении - наведение тени */
+.samples_item:hover .samples_popup {
+  display: block;
+}
+
+
+/* ПЕРЕЛИСТЫВАНИЕ СТРАНИЦ */
+
+.pagination a {
+  text-decoration: none;
+}
+
+.pagination {
+  width: 460px;
+  min-height: 80px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination_page {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 13px 17px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform:uppercase;
+  text-align: center;
+  color: #000000;
+
+  border: 3px solid #eeeeee;
+  border-radius: 3px;
+  background: #eeeeee;
+}
+
+.page_next {
+  width: 220px;
+}
+
+.pagination .active {
+  border: 3px solid #dbdbdb;
+  background: #ffffff;
+}
+
+/* подсветки страниц */
+
+.pagination_page:hover {
+  background-color: #dfdfdf;
+  border: 3px solid #dfdfdf;
+}
+
+.pagination_page:active {
+  color: #959595;
+
+  background-color: #d5d5d5;
+  border: 3px solid #d5d5d5;
+  box-shadow: 0px -2px 1px 0px #bfbfbf;
+}
+
+.social_catalog {
+  margin-top: 2px;
+}
+
+.advertizing_catalog {
+  margin-top: 9px;
+}
+
+/* СПРАЙТ */
+.sprite {
+  display: block;
+
+  background-image: url("../img/decoration/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.sprite-cart-icon {
+  width: 15px;
+  height: 15px;
+
+  background-position: -5px -5px;
+}
+
+.sprite-checkbox-on {
+  width: 27px;
+  height: 23px;
+
+  background-position: -5px -30px;
+}
+
+.sprite-fb-icon {
+  width: 12px;
+  height: 22px;
+
+  background-position: -5px -63px;
+}
+
+.sprite-insta-icon {
+  width: 21px;
+  height: 21px;
+
+  background-position: -5px -95px;
+}
+
+.sprite-vk-icon {
+  width: 26px;
+  height: 15px;
+
+  background-position: -5px -126px;
+}
+
+
+/* Устройство кнопки (физические размеры, убирание текста) для социальных кнопок */
+.social_btn {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+  width: 77px;
+  height: 80px;
+  margin-right: 10px;
+
+  font-size: 0;
+
+  background-color: #e1e1e1;
+  border-radius: 40px;
+
+  transition:
+  background-position 0.5s,
+  background-color 0.5s;
+}
+
+.social_btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  background-image: url("../img/decoration/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social_btn:hover {
+  background-color: #e74246;
+}
+
+/* Стилизация социальных кнопок при нажатии */
+.social_btn:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 1px 1px #c13135;
+}
+
+.social_btn:active::before {
+  opacity: 0.3;
+}
+
+.social_btn_vk::before {
+  width: 26px;
+  height: 15px;
+
+  background-position: -5px -126px;
+}
+
+.social_btn_fb::before {
+  width: 12px;
+  height: 22px;
+
+  background-position: -5px -63px;
+}
+
+.social_btn_inst::before {
+  width: 21px;
+  height: 21px;
+
+  background-position: -5px -95px;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> <!-- подключение шрифтов. обязательно до ВСЕХ стилей -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="main_header catalog_header">
+      <div class="container">
+        <div class="head_wrapper">
+          <div class="index_logo">
+            <a href="index.html">
+              <img src="img/content/nerds-logo.png" width="160" height="65" alt="Логотип Нёрдс">
+            </a>
+          </div>
+
+          <nav class="main_navigation_list">
+            <ul>
+              <li class="main_navigation_item"><a href="#">Студия</a></li>
+              <li class="main_navigation_item"><a href="#">Клиенты</a></li>
+              <li class="main_navigation_item active"><a>Магазин</a></li>
+              <li class="main_navigation_item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="user_block">
+            <a class="login login_ico" href="#">Корзина</a>
+          </div>
+        </div>
+
+        <h1 class="catalog_title">Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="main_wrapper">
+        <section class="filters">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <!-- 2.1.1 Ценовой бегунок -->
+            <div class="price_filter">
+              <h3 class="price_filter_title">Стоимость:</h3>
+
+              <div class="range_filter">
+                <div class="range_controls">
+                  <div class="scale"> <!-- Шкала (общая серая) -->
+                    <div style="width:70%;" class="bar"> <!-- Шкала (диапазона зелёная) Задание длины прямо в style -->
+                                                       <!-- javascript'ор будет управлять бегунком через style -->
+                    </div>
+                  </div>
+                  <div class="toggle toggle_min"> <!-- Ползунок на шкале минимума -->
+                  </div>
+                  <div class="toggle toggle_max"> <!-- Ползунок на шкале максимума -->
+                  </div>
+                </div>
+
+                <div class="price_controls"> <!-- Поля для ввода цены -->
+                  <label class="min_price_block">
+                    <span class="price_text">от</span><input type="text" name="min_price" value="0">
+                  </label>
+                  <label class="max_price_block">
+                    <span>до</span><input type="text" name="max_price" value="15 000">
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- фильтр "Сетка" в виде формы радиобаттонов -->
+            <fieldset class="pattern_form">
+              <legend class="form_title">Сетка:</legend>
+
+              <label class="pattern_form_radio">
+                <input type="radio" name="Features" value="Адаптивная" checked>
+                <span class="pattern_checkbox_indicator"></span>
+                <span class="pattern_form_text"> Адаптивная </span>
+              </label>
+              <label class="pattern_form_radio">
+                <input type="radio" name="Features" value="Фиксированная">
+                <span class="pattern_checkbox_indicator"></span>
+                <span class="pattern_form_text"> Фиксированная </span>
+              </label>
+              <label class="pattern_form_radio">
+                <input disabled type="radio" name="Features" value="Резиновая">
+                <span class="pattern_checkbox_indicator"></span>
+                <span class="pattern_form_text"> Резиновая </span>
+              </label>
+            </fieldset>
+
+            <!-- фильтр "Особенности" в виде формы чекбоксов -->
+            <fieldset class="particularity_form">
+              <legend class="form_title">Особенности:</legend>
+
+              <label class="particularity_form_checkbox">
+                <input type="checkbox" name="slider" checked>
+                <span class="particularity_checkbox_indicator"></span>
+                <span class="particularity_form_text">Слайдер</span>
+              </label>
+              <label class="particularity_form_checkbox">
+                <input type="checkbox" name="advantages">
+                <span class="particularity_checkbox_indicator"></span>
+                <span class="particularity_form_text">Блок преимуществ</span>
+              </label>
+              <label class="particularity_form_checkbox">
+                <input disabled type="checkbox" name="news" checked>
+                <span class="particularity_checkbox_indicator"></span>
+                <span class="particularity_form_text">Новости</span>
+              </label>
+              <label class="particularity_form_checkbox">
+                <input disabled type="checkbox" name="gallery">
+                <span class="particularity_checkbox_indicator"></span>
+                <span class="particularity_form_text">Галерея</span>
+              </label>
+              <label class="particularity_form_checkbox">
+                <input type="checkbox" name="bascket">
+                <span class="particularity_checkbox_indicator"></span>
+                <span class="particularity_form_text">Корзина</span>
+              </label>
+            </fieldset>
+
+            <input class="btn" type="submit" value="Показать">
+
+          </form>
+        </section>
+
+        <section class="right_side">
+
+          <!-- Сортировка "по цене", "по типу", "по названию" Selection -->
+          <section class="selection">
+
+            <div class="selection_title_box">
+              <h3 class="selection_title">Сортировать:</h3>
+            </div>
+            <div class="selection_sorting_wrapper">
+              <ul>
+                <li class="selection_item_text"><a class="active" href="#">По цене</a></li>
+                <li class="selection_item_text"><a href="#">По типу</a></li>
+                <li class="selection_item_text"><a href="#">По названию</a></li>
+                <li class="selection_item_text nodisplay"><a class="triangle_down triangle_down_active" href="#">По убыванию</a></li>
+                <li class="selection_item_text nodisplay"><a class="triangle_up" href="#">По возрастанию</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Образцы товара Samples -->
+          <section class="samples">
+
+            <article class="samples_item">
+              <div class="samples_head">
+              </div>
+              <img src="img/content/sample_sedona.jpg" width="360" height="576" alt="Sedona">
+              <div class="samples_popup">
+                <a class="samples_popup_title popup_title_width1" href="#">Sedona</a>
+                <p class="samples_popup_text">Информационный сайт <br>для туристов</p>
+                <a class="btn" href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+
+            <article class="samples_item">
+              <div class="samples_head">
+              </div>
+              <img src="img/content/sample_pink.jpg" width="360" height="576" alt="Pink">
+              <div class="samples_popup">
+                <a class="samples_popup_title popup_title_width2" href="#">Pink app</a>
+                <p class="samples_popup_text">Продуктовый лендинг <br>приложения для iOS и Android</p>
+                <a class="btn article_btn" href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+
+            <article class="samples_item">
+              <div class="samples_head">
+              </div>
+              <img src="img/content/sample_barbershop.jpg" width="360" height="576" alt="Barbershop">
+              <div class="samples_popup">
+                <a class="samples_popup_title popup_title_width3" href="#">Barbershop</a>
+                <p class="samples_popup_text">Сайт салоны красоты. <br>Для мужчин, да.</p>
+                <a class="btn article_btn" href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+
+            <article class="samples_item">
+              <div class="samples_head">
+              </div>
+              <img src="img/content/sample_mishka.jpg" width="360" height="576" alt="Mishka">
+              <div class="samples_popup">
+                <a class="samples_popup_title popup_title_width4" href="#">Mishka</a>
+                <p class="samples_popup_text">Интернет-магазин <br>вязаных игрушек</p>
+                <a class="btn article_btn" href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+
+            <article class="samples_item">
+              <div class="samples_head">
+              </div>
+              <img src="img/content/sample_aplus.jpg" width="360" height="576" alt="Обучение">
+              <div class="samples_popup">
+                <a class="samples_popup_title popup_title_width5" href="#">A plus</a>
+                <p class="samples_popup_text">Лендинг курсов повышения <br>квалификации</p>
+                <a class="btn article_btn" href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+
+            <article class="samples_item">
+              <div class="samples_head">
+              </div>
+              <img src="img/content/sample_kvast.jpg" width="360" height="576" alt="Квас">
+              <div class="samples_popup">
+                <a class="samples_popup_title popup_title_width6" href="#">Кваст</a>
+                <p class="samples_popup_text">Промо-сайт производителя <br>крафтового кваса</p>
+                <a class="btn article_btn" href="#">9 900 РУБ.</a>
+              </div>
+            </article>
+          </section>
+
+          <!-- pagination -->
+          <div class="pagination">
+            <a class="pagination_page active" href="#">1</a>
+            <a class="pagination_page" href="#">2</a>
+            <a class="pagination_page" href="#">3</a>
+            <a class="pagination_page page_next" href="#">Следующая</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Блок контакты Contacts + карта Map -->
+
+    <section class="map">
+      <div class="yandex_map" id="yandex_map">
+      </div>
+      <div class="container">
+
+        <div class="contacts">
+          <h3 class="contacts_title">NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts_text_1">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts_text_2">тел. +7(812) 275-75-75</p>
+          <a class="btn contacts_btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main_footer">
+      <div class="container">
+
+        <!--Ссылки на соцсети -->
+        <div class="footer_wrapper">
+          <div class="social social_catalog">
+            <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+            <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+            <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+          </div>
+
+          <div class="advertizing_footer advertizing_catalog">
+            <b class="footer_slogan">Давайте дружить, это выгодно!</b>
+            <p class="footer_text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Всплывающее PopUp-окно Напишите нам -->
+    <div class="modal_content">
+      <button class="modal_content_close" type="button" title="Закрыть"></button>
+      <h2 class="modal_content_title">Напишите нам</h2>
+      <form class="form_write_us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="inputs_wrapper">
+          <label class="modal_content_inputs">
+            <span>Ваше имя:</span>
+            <input class="input_form_name" type="text" name="username" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label class="modal_content_inputs">
+            <span>Ваш e-mail:</span>
+            <input class="input_form_email" type="text" name="usermail" placeholder="Для отправки ответа">
+          </label>
+        </div>
+        <label class="modal_content_textarea">
+          <span>Текст письма:</span>
+          <textarea class="textarea_form_text" name="usercomment" rows="4"></textarea>
+        </label>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="modal_overlay"></div> <!--блокировка страницы при открытом попапе -->
+
+    <script src="js/popup.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A31e5270b07b7b8e0e7fc62060438c39f1ebd2405917b780681a017485d00d156&amp;width=1440&amp;height=415&amp;lang=ru_RU&amp;scroll=true&id=yandex_map"></script>
+  </body>
+</html>

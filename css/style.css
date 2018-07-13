@@ -2179,7 +2179,6 @@ legend {
   border-top: 10px solid #000000;
 }
 
-
 /* позиционирование ссылки с размерами под треугольник вверх */
 .triangle_up {
   position: relative;
@@ -2511,7 +2510,6 @@ border-radius: 50%;
   display: block;
 }
 
-
 /* ПЕРЕЛИСТЫВАНИЕ СТРАНИЦ */
 
 .pagination a {
@@ -2519,7 +2517,7 @@ border-radius: 50%;
 }
 
 .pagination {
-  width: 460px;
+  width: 760px;
   min-height: 80px;
 
   color: #000000;
